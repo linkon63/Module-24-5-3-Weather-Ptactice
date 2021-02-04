@@ -42,7 +42,7 @@
             let locationInput = document.getElementById('locationInput').value;
             // alert(locationInput);
             fetch(
-                    `http://api.openweathermap.org/data/2.5/weather?q=${locationInput}&appid=4c0174b10931e93aa8e3aa499a666d4e`)
+                    `https://api.openweathermap.org/data/2.5/weather?q=${locationInput}&appid=4c0174b10931e93aa8e3aa499a666d4e`)
                 .then(response => response.json())
                 .then(data => {
                     showData(data);
