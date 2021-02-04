@@ -47,12 +47,12 @@
                 .then(data => {
                     showData(data);
 
-                    // const iconGet = data.weather[0];
-                    // const iconAdd = iconGet.icon;
-                    // console.log(iconAdd);
+                    const iconGet = data.weather[0];
+                    const iconAdd = iconGet.icon;
+                    console.log(iconAdd);
 
-                   // const img = getElementById('image');
-                    // console.log(tempObj);
+                   const img = document.getElementById('image');
+                    img.src = `https://openweathermap.org/img/wn/${iconAdd}@2x.png`
                     // console.log(celcious);
                     // console.log(celciousControl);
                 }
